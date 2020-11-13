@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import API from "../utils/API";
+import Employees from '../Employees.json'
+import Jumbo from '../Components/Jumbo'
+import Search from '../Components/SearchCon'
 
 
 
@@ -12,20 +14,26 @@ function Gallery() {
       userEmail: ""
    });
 
-  
+   useEffect(() => {
+  //  setEmployeeState
+  }, []);
+
 
 
   // trying to get my employees
+const getEmpoyees = () => {
 
-  // function loadEmployees() {
-  //   API.getEmployees(results).then((function(res) {
-  //     console.log(res)
-  //   }))
-  // }
+  console.log(Employees)
+}
+  
+
+  
 
     return (
       <div>
-       <h1>Hi</h1>
+        <Jumbo />
+        <Search />
+      <button onClick={getEmpoyees}>Button</button>
       </div>
     );
   }
