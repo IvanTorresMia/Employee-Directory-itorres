@@ -3,7 +3,7 @@ import style from './style.css'
 
 function Jumbo() {
     return (
-        <div className="jumbotron">
+        <div className="Jumbotron">
             <h1 className="text">Employee Directory!</h1>
 
         </div>

@@ -2,29 +2,33 @@ import React, { useEffect, useState } from "react";
 import Employees from '../Employees.json'
 import Jumbo from '../Components/Jumbo'
 import Search from '../Components/SearchCon'
+import TableHeader from '../Components/TableHeader'
 
 
 
 function Gallery() {
 
-   const [employeeState, setEmployeeState] = useState({
-      userName: "",
-      userPhone: "",
-      userImage: "",
-      userEmail: ""
-   });
+ const [userName, setUserName] = useState("")
+
 
    useEffect(() => {
-  //  setEmployeeState
+
+    getEmpoyees()
+
   }, []);
 
 
 
   // trying to get my employees
 const getEmpoyees = () => {
-
-  console.log(Employees)
-}
+  // const name = Employees.
+  const firstName = Employees.results[0].name.first
+const lastName = Employees.results[0].name.last
+  // console.log(Employees.results[0].name.first)
+  // console.log(Employees.results[0].name.last)
+  setUserName(userName[firstName + " " + lastName])
+  
+ }
   
 
   
@@ -32,8 +36,8 @@ const getEmpoyees = () => {
     return (
       <div>
         <Jumbo />
-        <Search />
-      <button onClick={getEmpoyees}>Button</button>
+       <Search />
+      <TableHeader value={{}} />
       </div>
     );
   }

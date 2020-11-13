@@ -1,0 +1,10 @@
+.tableHead {
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    background-color: #302E31;
+}
+
+.text {
+    color: white;
+}

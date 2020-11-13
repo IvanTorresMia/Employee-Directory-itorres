@@ -3,8 +3,8 @@ import Style from './style.css'
 
 function Search() {
     return (
-        <div className="searchCon card">
-            <input className="inputBar col" />
+        <div className="searchCon">
+            <input className="inputField" placeholder="Search Employees"/>
         </div>
     )
 }
