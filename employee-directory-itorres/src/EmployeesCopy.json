@@ -2,15 +2,19 @@
     "results": [
     {
     "name": {
+    "title": "Mrs",
     "first": "Wilma",
     "last": "Hansen"
     },
     "email": "wilma.hansen@example.com",
     "dob": {
+    "date": "1968-08-05T06:08:09.282Z",
     "age": 52
     },
     "phone": "00-9750-1132",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/women/45.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/45.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/45.jpg"
     }
     },
@@ -27,6 +31,8 @@
     },
     "phone": "(908)-750-1070",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/men/93.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/93.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/93.jpg"
     }
     },
@@ -43,6 +49,8 @@
     },
     "phone": "08-7996-8239",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/men/45.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/45.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/45.jpg"
     }
     },
@@ -59,6 +67,8 @@
     },
     "phone": "051-711-4085",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/women/6.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/6.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/6.jpg"
     }
     },
@@ -75,6 +85,8 @@
     },
     "phone": "000-92923775",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/men/52.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/52.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/52.jpg"
     }
     },
@@ -91,6 +103,8 @@
     },
     "phone": "(484)-946-6336",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/men/91.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/91.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/91.jpg"
     }
     },
@@ -107,6 +121,8 @@
     },
     "phone": "(21) 1405-8356",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/men/50.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/50.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/50.jpg"
     }
     },
@@ -123,6 +139,8 @@
     },
     "phone": "078 065 50 37",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/women/84.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
     }
     },
@@ -139,6 +157,8 @@
     },
     "phone": "(119)-404-7450",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/women/23.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/23.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/23.jpg"
     }
     },
@@ -155,6 +175,8 @@
     },
     "phone": "(284)-720-1497",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/women/78.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/78.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/78.jpg"
     }
     },
@@ -171,6 +193,8 @@
     },
     "phone": "(676)-090-6512",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/women/33.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/33.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/33.jpg"
     }
     },
@@ -187,6 +211,8 @@
     },
     "phone": "(193)-463-0583",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/men/46.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/46.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/46.jpg"
     }
     },
@@ -203,6 +229,8 @@
     },
     "phone": "(83) 3802-1595",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/men/98.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/98.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/men/98.jpg"
     }
     },
@@ -219,6 +247,8 @@
     },
     "phone": "0497-8511103",
     "picture": {
+    "large": "https://randomuser.me/api/portraits/women/40.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/women/40.jpg",
     "thumbnail": "https://randomuser.me/api/portraits/thumb/women/40.jpg"
     }
     },
