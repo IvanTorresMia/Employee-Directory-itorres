@@ -13,8 +13,9 @@ align-items: center;
 }
 .Btn {
     margin-top: 10px;
+
     color: white;
-    background-color: #23292E;
+    background-color: #23282E;
 }
 
 .Btn :hover {

@@ -4,8 +4,8 @@ import Style from "./style.css";
 function TableRow(props) {
   const { name, email, phone, age, image } = props;
   return (
-    <tbody>
-    <tr className="tableRow">
+    <tbody className="tableRow">
+    <tr>
       <th>
       <img scope="row"src={image} />
       </th>
