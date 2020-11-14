@@ -24,12 +24,12 @@ function Gallery() {
   };
 
 
-async function handleSort(event) {
+function handleSort(event) {
     event.preventDefault();
  
-   const sorted = await employeesState.sort((a, b) => (a.name.first > b.name.first ? 1 : -1));
-    setEmployeesState(sorted);
-     console.log(sorted)
+   const sorted = employeesState.sort((a, b) => (a.name.first > b.name.first ? 1 : -1));
+    setEmployeesState([...sorted]);
+    console.log(sorted)
     
   };
 
