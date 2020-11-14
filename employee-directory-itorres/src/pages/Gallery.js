@@ -4,6 +4,7 @@ import Jumbo from "../Components/Jumbo";
 import Search from "../Components/SearchCon";
 import TableHeader from "../Components/TableHeader";
 import EmployeeContext from "../utils/EmployeeContext";
+import Style from './style.css'
 
 function Gallery() {
   const [employeesState, setEmployeesState] = useState(Employees);
@@ -33,14 +34,31 @@ function handleSort(event) {
     
   };
 
+function unSort(event) {
+  event.preventDefault()
 
+  const arr = employeesState
+  for (let i = arr.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * arr.length);
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  setEmployeesState([...arr]);
+
+  console.log("hi this works")
+
+}
   
   return (
-    <div>
+    <div className="con">
       <Jumbo />
-      <Search nameInput={inputState} handleInputChange={handleInputChange} />
+      {/* <Search nameInput={inputState} handleInputChange={handleInputChange} /> */}
       <EmployeeContext.Provider value={employeesState}>
-        <TableHeader handleSort={handleSort}/>
+        <div className="container">
+        <Search nameInput={inputState} handleInputChange={handleInputChange} handleSort={handleSort} unSort={unSort}/>
+        <TableHeader/>
+        </div>
       </EmployeeContext.Provider>
     </div>
   );

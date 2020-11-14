@@ -12,18 +12,17 @@ function TableHeader(props) {
   }, [employees]);
 
   return (
-    <div className="row">
-      <div className="tableHead row">
-        <h2 className="col text">Photo</h2>
-        <h2 className="col text">
-          
-          Name{" "}<button onClick={props.handleSort}>sort</button>
-        </h2>
-
-        <h2 className="col text">Email</h2>
-        <h2 className="col text">Phone</h2>
-        <h2 className="col text">Age</h2>
-      </div>
+    <div className="container">
+    <table className="table table-striped">
+      <thead>
+        <tr className="tableHead">
+        <th scope="col" className="text">Photo</th>
+        <th  scope="col" className="text">Name </th>
+        <th scope="col" className="text">Email</th>
+        <th scope="col" className="text">Phone</th>
+        <th scope="col" className="text">Age</th>
+        </tr>
+        </thead>
       {employees.map((employee, i) => (
         <TableRow
           key={i}
@@ -34,8 +33,11 @@ function TableHeader(props) {
           age={employee.dob.age}
         />
       ))}
+    </table>
     </div>
   );
 }
 
 export default TableHeader;
+
+// <span className="btn" onClick={props.handleSort}>sort</span>
