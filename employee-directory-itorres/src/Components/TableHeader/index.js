@@ -10,14 +10,16 @@ function TableHeader(props) {
   useEffect(() => {
     console.log("im rendering");
   }, [employees]);
-  
+
   return (
     <div className="row">
       <div className="tableHead row">
         <h2 className="col text">Photo</h2>
         <h2 className="col text">
-          Name <button onClick={props.handleSort}>sort</button>{" "}
+          
+          Name{" "}<button onClick={props.handleSort}>sort</button>
         </h2>
+
         <h2 className="col text">Email</h2>
         <h2 className="col text">Phone</h2>
         <h2 className="col text">Age</h2>

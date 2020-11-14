@@ -9,6 +9,8 @@ function Gallery() {
   const [employeesState, setEmployeesState] = useState(Employees);
   const [inputState, setInputState] = useState("");
 
+
+
   const handleInputChange = (event) => {
     const { value } = event.target;
     const filtered = Employees.filter(
@@ -18,21 +20,27 @@ function Gallery() {
     );
     setInputState(value);
     setEmployeesState(filtered);
+    // console.log("sorter: " + JSON.stringify(employeesState))
   };
 
-  const handleSort = () => {
-    const sorted = employeesState;
-    sorted.sort((a, b) => (a.name.first > b.name.first ? 1 : -1));
-    console.log(sorted);
+
+async function handleSort(event) {
+    event.preventDefault();
+ 
+   const sorted = await employeesState.sort((a, b) => (a.name.first > b.name.first ? 1 : -1));
     setEmployeesState(sorted);
+     console.log(sorted)
+    
   };
 
+
+  
   return (
     <div>
       <Jumbo />
       <Search nameInput={inputState} handleInputChange={handleInputChange} />
       <EmployeeContext.Provider value={employeesState}>
-        <TableHeader handleSort={handleSort} />
+        <TableHeader handleSort={handleSort}/>
       </EmployeeContext.Provider>
     </div>
   );
