@@ -1,47 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Employees from "../Employees.json";
 import Jumbo from "../Components/Jumbo";
 import Search from "../Components/SearchCon";
 import TableHeader from "../Components/TableHeader";
 import EmployeeContext from "../utils/EmployeeContext";
 
-let employeeArr = [];
-
 function Gallery() {
-  const [userName, setUserName] = useState("");
+  const [employeesState, setEmployeesState] = useState(Employees);
+  const [inputState, setInputState] = useState("");
 
-  const [employeeState, setEmployeeState] = useState({
-    name: "",
-    email: "",
-    image: "",
-    phone: "",
-    age: "",
-  });
-
-  // useEffect(() => {
-  //   getEmpoyees();
-  // }, []);
-
-  // const [context, setcontext] = useContext(EmployeeContext);
-
-  // trying to get my employees
-
-
-
-  const getEmpoyees = () => {
-    
-    
-
+  const handleInputChange = (event) => {
+    const { value } = event.target;
+    const filtered = Employees.filter(
+      (employee) =>
+        employee.name.first.toLowerCase().includes(value.toLowerCase()) ||
+        employee.name.last.toLowerCase().includes(value.toLowerCase())
+    );
+    setInputState(value);
+    setEmployeesState(filtered);
   };
 
-  getEmpoyees();
+  const handleSort = () => {
+    const sorted = employeesState;
+    sorted.sort((a, b) => (a.name.first > b.name.first ? 1 : -1));
+    console.log(sorted);
+    setEmployeesState(sorted);
+  };
 
   return (
     <div>
       <Jumbo />
-      <EmployeeContext.Provider>
-        <Search />
-        <TableHeader />
+      <Search nameInput={inputState} handleInputChange={handleInputChange} />
+      <EmployeeContext.Provider value={employeesState}>
+        <TableHeader handleSort={handleSort} />
       </EmployeeContext.Provider>
     </div>
   );

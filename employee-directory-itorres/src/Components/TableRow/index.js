@@ -1,16 +1,15 @@
 import React, { useContext } from "react";
 import Style from "./style.css";
-import EmployeeContext from "../../utils/EmployeeContext";
 
-function TableRow() {
-  const { name, email, image, phone, age } = useContext(EmployeeContext);
+function TableRow(props) {
+  const { name, email, phone, age, image } = props;
   return (
-    <div className="tableHead">
+    <div className="tableHead row">
       <img src={image} />
-      <p>{name}</p>
-      <p>{email}</p>
-      <p>{phone}</p>
-      <p>{age}</p>
+      <p className="col">{name}</p>
+      <p className="col">{email}</p>
+      <p className="col">{phone}</p>
+      <p className="col">{age}</p>
     </div>
   );
 }
