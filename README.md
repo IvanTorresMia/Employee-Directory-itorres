@@ -28,20 +28,42 @@ Hi Welcome to my Employee Directory app. Here you will see a set of 20 emplyees 
 
 # Code
 
-## App.js
+## Using setState
 
-*  
+*  Here I am using setState to filter through the array of employees and compare them to the target value. I pass this to my onChange hook and anytime the user types a letter into the imput field the function will be called which will rerender the page with a new set of employees.
 ```
+ const handleInputChange = (event) => {
+    const { value } = event.target;
+    const filtered = Employees.filter(
+      (employee) =>
+        employee.name.first.toLowerCase().includes(value.toLowerCase()) ||
+        employee.name.last.toLowerCase().includes(value.toLowerCase())
+    );
+    setInputState(value);
+    setEmployeesState(filtered);
+    // console.log("sorter: " + JSON.stringify(employeesState))
+  };
 
 
   ```
 
-## App.js Continue
-* 
+## Using Provider and props
+* Here I am passing a value to my provider of employeeState which contains all the imployee information that we need, then it passes those values to it's children ie the TableHeader which container my rows of employees. 
 
 ```
-
-  
+  return (
+    <div className="con">
+      <Jumbo />
+      {/* <Search nameInput={inputState} handleInputChange={handleInputChange} /> */}
+      <EmployeeContext.Provider value={employeesState}>
+        <div className="container">
+        <Search nameInput={inputState} handleInputChange={handleInputChange} handleSort={handleSort} unSort={unSort}/>
+        <TableHeader/>
+        </div>
+      </EmployeeContext.Provider>
+    </div>
+  );
+}
 
 ```
 
