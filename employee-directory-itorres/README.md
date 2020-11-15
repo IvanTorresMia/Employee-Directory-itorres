@@ -1,4 +1,4 @@
-# Shrek Game 
+# Employee Tracker
 
 
 
@@ -24,7 +24,7 @@ Hi Welcome to my Employee Directory app. Here you will see a set of 20 emplyees 
 
 
 ## Features
-![GIF]()
+![GIF](./Employee.gif)
 
 # Code
 
