@@ -52,7 +52,7 @@ Ivan Torres
 * [GitHub-Repo](https://github.com/IvanTorresMia/Employee-Directory-itorres/tree/main/employee-directory-itorres)
 * [linkedIn](www.linkedin.com/in/ivan-torres-0828931b2)
 * [Portfolio](https://ivantorresmia.github.io/IvanTorres-portfolio/)
-* [Deployed-Link]()
+* [Deployed-Link](https://ivantorresmia.github.io/Employee-Directory-itorres/)
 
 ## Credits
 * Credits for this homework assignment go out to Jerome, Manuel, Kerwin, Roger, and all of my classmates who helped me in study sessions. As well as my tutor who helped me a ton with understanding this homework assignment. 
