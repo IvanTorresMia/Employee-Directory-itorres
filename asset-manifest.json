@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Employee-Directory-itorres/static/css/main.8e2bdae8.chunk.css",
+    "main.js": "/Employee-Directory-itorres/static/js/main.08119889.chunk.js",
+    "main.js.map": "/Employee-Directory-itorres/static/js/main.08119889.chunk.js.map",
+    "runtime-main.js": "/Employee-Directory-itorres/static/js/runtime-main.28971a28.js",
+    "runtime-main.js.map": "/Employee-Directory-itorres/static/js/runtime-main.28971a28.js.map",
+    "static/js/2.7d3708c5.chunk.js": "/Employee-Directory-itorres/static/js/2.7d3708c5.chunk.js",
+    "static/js/2.7d3708c5.chunk.js.map": "/Employee-Directory-itorres/static/js/2.7d3708c5.chunk.js.map",
+    "static/js/3.07b2cd76.chunk.js": "/Employee-Directory-itorres/static/js/3.07b2cd76.chunk.js",
+    "static/js/3.07b2cd76.chunk.js.map": "/Employee-Directory-itorres/static/js/3.07b2cd76.chunk.js.map",
+    "index.html": "/Employee-Directory-itorres/index.html",
+    "static/css/main.8e2bdae8.chunk.css.map": "/Employee-Directory-itorres/static/css/main.8e2bdae8.chunk.css.map",
+    "static/js/2.7d3708c5.chunk.js.LICENSE.txt": "/Employee-Directory-itorres/static/js/2.7d3708c5.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/Employee-Directory-itorres/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28971a28.js",
+    "static/js/2.7d3708c5.chunk.js",
+    "static/css/main.8e2bdae8.chunk.css",
+    "static/js/main.08119889.chunk.js"
+  ]
+}
