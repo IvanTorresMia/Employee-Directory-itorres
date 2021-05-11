@@ -1,38 +1,53 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto:wght@300&display=swap");
+
+body {
+  background-color: white;
+  font-family: "New Tegomin", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hero */
+
+.hero {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  /* background-color: rgb(247, 1, 0); */
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero h1,
+p {
+  color: rgb(247, 1, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Search Container */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.searchCon {
+  width: 100%;
+  padding: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputField {
+  width: 100%;
+  font-size: large;
+  padding-left: 10px;
+}
+.Btn {
+  margin-top: 10px;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Btn :hover {
+  cursor: pointer;
+  border: #797979 2px solid;
+}
+
+/* table row */
+
+.table {
+  max-width: 80%;
 }
