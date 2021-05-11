@@ -1,19 +1,18 @@
-import React, { useContext } from "react";
-import Style from "./style.css";
+import React from "react";
 
 function TableRow(props) {
   const { name, email, phone, age, image } = props;
   return (
     <tbody className="tableRow">
-    <tr>
-      <th>
-      <img scope="row"src={image} />
-      </th>
-      <td className="col">{name}</td>
-      <td className="col">{email}</td>
-      <td className="col">{phone}</td>
-      <td className="col">{age}</td>
-    </tr>
+      <tr>
+        <th>
+          <img src={image} />
+        </th>
+        <td>{name}</td>
+        <td>{email}</td>
+        <td>{phone}</td>
+        <td>{age}</td>
+      </tr>
     </tbody>
   );
 }
