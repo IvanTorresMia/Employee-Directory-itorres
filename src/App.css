@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto:wght@300&display=swap");
 
 body {
-  background-color: white;
+  background-image: url("./employee4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "New Tegomin", serif;
   font-family: "Roboto", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Hero */
@@ -19,12 +23,23 @@ body {
 
 .hero h1,
 p {
-  color: rgb(87, 8, 7);
+  color: rgb(239, 227, 211);
 }
 
 .hero h1 {
   font-size: 3rem;
   font-weight: 10rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.5rem;
+    font-weight: 6rem;
+  }
+  .hero p {
+    font-size: 0.8rem;
+    font-weight: 4rem;
+  }
 }
 
 /* Search Container */
@@ -40,16 +55,27 @@ p {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .searchCon button {
-  width: 60%;
-  height: 5rem;
+  width: 30%;
+  height: 4rem;
   margin-top: 2rem;
   border-radius: 0.1rem;
   background-color: rgb(40, 38, 37);
   color: rgb(239, 227, 211);
   font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .searchCon button {
+    width: 30%;
+    height: 3rem;
+    font-size: 0.7rem;
+  }
 }
 
 .searchCon input {
@@ -57,6 +83,8 @@ p {
   border: none;
   outline: none;
   border-bottom: 0.1rem solid rgb(40, 38, 37);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .searchCon input:focus + .label-title .content-title,
@@ -68,4 +96,31 @@ p {
 
 .table {
   max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table th {
+  color: rgb(239, 227, 211);
+}
+.table td {
+  color: rgb(239, 227, 211);
+}
+
+@media only screen and (max-width: 500px) {
+  .table {
+    width: 40%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+  }
+
+  .table th {
+    font-size: 0.5rem;
+  }
+  .table td {
+    font-size: 0.5rem;
+  }
+  .table img {
+    width: 1.5rem;
+  }
 }

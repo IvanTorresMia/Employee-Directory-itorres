@@ -11,27 +11,25 @@ function TableHeader(props) {
   }, [employees]);
 
   return (
-    <div className="container">
-      <table className="table table-striped">
-        <tr className="tableHead">
-          <th>Photo</th>
-          <th>Name </th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>Age</th>
-        </tr>
-        {employees.map((employee, i) => (
-          <TableRow
-            key={i}
-            image={employee.picture.thumbnail}
-            name={`${employee.name.first} ${employee.name.last}`}
-            email={employee.email}
-            phone={employee.phone}
-            age={employee.dob.age}
-          />
-        ))}
-      </table>
-    </div>
+    <table className="table">
+      <tr className="tableHead">
+        <th>Photo</th>
+        <th>Name </th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Age</th>
+      </tr>
+      {employees.map((employee, i) => (
+        <TableRow
+          key={i}
+          image={employee.picture.thumbnail}
+          name={`${employee.name.first} ${employee.name.last}`}
+          email={employee.email}
+          phone={employee.phone}
+          age={employee.dob.age}
+        />
+      ))}
+    </table>
   );
 }
 
