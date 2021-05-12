@@ -19,7 +19,12 @@ body {
 
 .hero h1,
 p {
-  color: rgb(247, 1, 0);
+  color: rgb(87, 8, 7);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 10rem;
 }
 
 /* Search Container */
@@ -28,22 +33,35 @@ p {
   width: 100%;
   padding: 20px;
   align-items: center;
+  text-align: center;
 }
 
-.inputField {
-  width: 100%;
-  font-size: large;
-  padding-left: 10px;
-}
-.Btn {
-  margin-top: 10px;
-
-
+.searchCon input {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Btn :hover {
-  cursor: pointer;
-  border: #797979 2px solid;
+.searchCon button {
+  width: 60%;
+  height: 5rem;
+  margin-top: 2rem;
+  border-radius: 0.1rem;
+  background-color: rgb(40, 38, 37);
+  color: rgb(239, 227, 211);
+  font-size: 1.5rem;
+}
+
+.searchCon input {
+  width: 60%;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid rgb(40, 38, 37);
+}
+
+.searchCon input:focus + .label-title .content-title,
+.searchCon input:valid + .label-title .content-title {
+  display: none;
 }
 
 /* table row */
