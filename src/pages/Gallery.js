@@ -47,15 +47,19 @@ function Gallery() {
   return (
     <>
       <Hero />
-      <div className="container">
+      <div className="row">
         <EmployeeContext.Provider value={employeesState}>
+          <div className="col">
             <Search
               nameInput={inputState}
               handleInputChange={handleInputChange}
               handleSort={handleSort}
               unSort={unSort}
             />
+          </div>
+          <div className="col">
             <TableHeader />
+          </div>
         </EmployeeContext.Provider>
       </div>
     </>
